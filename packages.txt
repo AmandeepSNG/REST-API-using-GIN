@@ -1,0 +1,13 @@
+gin => go get -u github.com/gin-gonic/gin
+ENV => go get github.com/joho/godotenv
+mongodb => go get go.mongodb.org/mongo-driver/mongo
+uuid => go get github.com/google/uuid
+CORS => go get github.com/gin-contrib/cors
+
+
+
+
+
+for dev/local server => export ENV=dev && go run main.go
+for staging server => export ENV=stage && go run main.go
+for production server =>export ENV=prod && go run main.go
